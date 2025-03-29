@@ -45,8 +45,10 @@ export default function Navbar() {
               {item.name}
             </Link>
           ))}
-          <Button asChild>
-            <Link href="/invite">Add to Discord</Link>
+          <Button asChild className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+            <Link href="/invite">
+              Add to Discord
+            </Link>
           </Button>
         </nav>
 
@@ -79,9 +81,10 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
-            <Button className="mt-2" asChild>
+            <Button className="mt-2 relative overflow-hidden group" asChild>
               <Link href="/invite" onClick={() => setIsOpen(false)}>
-                Add to Discord
+                <span className="relative z-10 font-semibold">Add to Discord</span>
+                <span className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-90 group-hover:opacity-100 transition-opacity duration-300"></span>
               </Link>
             </Button>
           </div>

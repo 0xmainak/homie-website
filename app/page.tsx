@@ -33,8 +33,8 @@ export default function Home() {
   ]
 
   const stats = [
-    { value: "10K+", label: "Servers" },
-    { value: "1M+", label: "Users" },
+    { value: "100+", label: "Servers" },
+    { value: "10k+", label: "Users" },
     { value: "99.9%", label: "Uptime" },
     { value: "24/7", label: "Support" },
   ]
@@ -42,7 +42,7 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
       <div className="grid-pattern">
-        
+
         {/* Hero Section */}
         <section className="container mx-auto px-4 py-20 md:py-32 flex flex-col items-center text-center">
           <motion.div

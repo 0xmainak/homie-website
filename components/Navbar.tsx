@@ -23,7 +23,7 @@ export function Navbar() {
         
         <div className="ml-auto flex items-center space-x-4">
           <ThemeToggle />
-          <Button asChild size="sm" className="neon-border">
+          <Button asChild size="sm" className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
             <Link href="https://discord.com/api/oauth2/authorize?client_id=1217850169375199313&permissions=8&scope=bot">
               Add to Discord
             </Link>

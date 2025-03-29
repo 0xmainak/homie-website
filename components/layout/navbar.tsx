@@ -47,7 +47,7 @@ export default function Navbar() {
             Documentation
           </Link>
           <ModeToggle />
-          <Button>
+          <Button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
             Add to Discord
           </Button>
         </div>
@@ -77,7 +77,7 @@ export default function Navbar() {
             <Link href="/docs" className="text-muted-foreground hover:text-foreground transition-colors py-2">
               Documentation
             </Link>
-            <Button className="w-full">
+            <Button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full">
               Add to Discord
             </Button>
           </div>
