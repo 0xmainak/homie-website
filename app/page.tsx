@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { ArrowRight, Bot, Cpu, Music, Zap } from "lucide-react"
 import Link from "next/link"
-import { Footer } from "@/components/layout/Footer"
+import Footer from "@/components/layout/footer"
 import FeatureCard from "@/components/home/feature-card"
 import StatsSection from "@/components/home/stats-section"
 
@@ -60,12 +60,23 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button size="lg" className="w-full sm:w-auto">
-                  Invite Bot <ArrowRight className="ml-2 h-4 w-4" />
+                <a
+                  href="https://discord.com/oauth2/authorize?client_id=1217850169375199313&permissions=572196434336961&integration_type=0&scope=bot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+  >                  Invite Bot <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
                 </Button>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button size="lg" variant="outline" className="w-full sm:w-auto">
+                  <a
+                    href="https://discord.gg/dn2dpgCbXP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                   Join Support Server
+                  </a>
                 </Button>
               </motion.div>
             </div>

@@ -19,7 +19,8 @@ export default function Navbar() {
     { name: "Features", href: "/features" },
     { name: "Commands", href: "/commands" },
     { name: "About", href: "/about" },
-    { name: "Invite", href: "/invite" },
+    { name: "Terms", href: "/terms" },
+    { name: "Privacy", href: "/privacy" },
   ]
 
   return (
